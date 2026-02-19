@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YC Application Tracker",
+  "version": "1.0",
+  "description": "Track visited YC companies and manage applications.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.workatastartup.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.workatastartup.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
+
